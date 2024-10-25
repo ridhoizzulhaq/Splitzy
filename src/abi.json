@@ -1,0 +1,42 @@
+[
+    {
+      "type": "impl",
+      "name": "SimpleStorage",
+      "interface_name": "SimpleStorage::SimpleStorage::ISimpleStorage"
+    },
+    {
+      "type": "interface",
+      "name": "SimpleStorage::SimpleStorage::ISimpleStorage",
+      "items": [
+        {
+          "type": "function",
+          "name": "set",
+          "inputs": [
+            {
+              "name": "x",
+              "type": "core::integer::u128"
+            }
+          ],
+          "outputs": [],
+          "state_mutability": "external"
+        },
+        {
+          "type": "function",
+          "name": "get",
+          "inputs": [],
+          "outputs": [
+            {
+              "type": "core::integer::u128"
+            }
+          ],
+          "state_mutability": "view"
+        }
+      ]
+    },
+    {
+      "type": "event",
+      "name": "SimpleStorage::SimpleStorage::SimpleStorage::Event",
+      "kind": "enum",
+      "variants": []
+    }
+  ]
